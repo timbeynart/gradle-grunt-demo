@@ -1,0 +1,44 @@
+plugins {
+    id "com.moowork.grunt" version "0.10"
+}
+
+defaultTasks 'gruntBuildWithOpts'
+
+
+node {
+    // Version of node to use.
+    version = '0.10.35'
+
+    // Version of npm to use.
+    npmVersion = '1.4.28'
+
+    // Base URL for fetching node distributions (change if you have a mirror).
+    distBaseUrl = 'http://nodejs.org/dist'
+
+    // If true, it will download node using above parameters.
+    // If false, it will try to use globally installed node.
+    download = true
+
+    // Set the work directory for unpacking node
+    workDir = file("${project.projectDir}/nodejs")
+}
+grunt {
+    // Set the directory where Gruntfile.js should be found
+    workDir = file("${project.projectDir}")
+
+    // Whether colors should output on the terminal
+    colors = true
+
+    // Whether output from Grunt should be buffered - useful when running tasks in parallel
+    bufferOutput = false
+}
+
+
+task gruntBuildWithOpts(type: GruntTask, dependsOn:'npmInstall') {
+   args = ["default", "--debug"]
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
+
