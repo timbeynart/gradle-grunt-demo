@@ -1,0 +1,36 @@
+//see http://jshint.com/docs/options/
+{
+  "globals": {
+    "Hello": true,
+    "World": true
+  },
+  "qunit": {
+    "asyncTest": false,
+    "deepEqual": false,
+    "equal": false,
+    "expect": false,
+    "module": false,
+    "notDeepEqual": false,
+    "notEqual": false,
+    "notStrictEqual": false,
+    "ok": false,
+    "QUnit": false,
+    "raises": false,
+    "start": false,
+    "stop": false,
+    "strictEqual": false,
+    "test": false
+  },
+  "expr": true,//suppresses warnings about the use of expressions where normally you would expect to see assignments or function calls.
+  "quotmark": true,//This option enforces the consistency of quotation marks used throughout your code. It accepts three values: true if you don't want to enforce one particular style but want some consistency, "single" if you want to allow only single quotes and "double" if you want to allow only double quotes.
+  "curly": true,// true: Require {} for every new block or scope
+  "eqeqeq": true,// true: Require triple equals (===) for comparison
+  "immed": true,// true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+  "latedef": true,// true: Require variables/functions to be defined before being used
+  "newcap": true,// true: Require capitalization of all constructor functions e.g. `new F()`
+  "noarg": true,// true: Prohibit use of `arguments.caller` and `arguments.callee`
+  "sub": true,// true: Tolerate using `[]` notation when it can still be expressed in dot notation
+  "undef": true,// true: Require all non-global variables to be declared (prevents global leaks)
+  "boss": true,// true: Tolerate assignments where comparisons would be expected
+  "eqnull": true// true: Tolerate use of `== null`
+}

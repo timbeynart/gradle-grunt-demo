@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.8 (Mac OS X 0.0.0)" package="" timestamp="2015-06-02T19:23:40" id="0" hostname="5TS206084044ML.local" tests="2" errors="0" failures="0" time="0.002">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34"/>
+    </properties>
+    <testcase name="world function returns correct string." time="0.001" classname="PhantomJS 1.9.8 (Mac OS X 0.0.0).Test Hello"/>
+    <testcase name="peace function returns correct sum." time="0.001" classname="PhantomJS 1.9.8 (Mac OS X 0.0.0).Test Hello"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
